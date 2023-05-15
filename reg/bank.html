@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Loan Application Form</title>
+</head>
+<body>
+	<h1>Loan Application Form</h1>
+	<form action="application.php" method="post">
+		<label for="name">Name:</label>
+		<input type="text" id="name" name="name" required><br><br>
+
+		<label for="email">Email:</label>
+		<input type="email" id="email" name="email" required><br><br>
+
+		<label for="phone">Phone:</label>
+		<input type="tel" id="phone" name="phone" required><br><br>
+
+		<label for="loan_amount">Loan Amount:</label>
+		<input type="number" id="loan_amount" name="loan_amount" min="1000" max="1000000" required><br><br>
+
+		<label for="loan_term">Loan Term:</label>
+		<select id="loan_term" name="loan_term" required>
+			<option value="">Select Loan Term</option>
+			<option value="12">12 Months</option>
+			<option value="24">24 Months</option>
+			<option value="36">36 Months</option>
+		</select><br><br>
+
+		<label for="credit_score">Credit Score:</label>
+		<input type="number" id="credit_score" name="credit_score" min="300" max="900" required><br><br>
+
+		<label for="income">Income:</label>
+		<input type="number" id="income" name="income" min="0" required><br><br>
+
+		<label for="collateral">Collateral:</label>
+			<input type="radio" id="collateral_yes" name="collateral" value="yes" required>
+			<label for="collateral_yes">Yes</label>
+			<input type="radio" id="collateral_no" name="collateral" value="no" required>
+			<label for="collateral_no">No</label><br><br>
+
+			
+
+		<label for="purpose">Loan Purpose:</label>
+		<textarea id="purpose" name="purpose" required></textarea><br><br>
+
+		<input type="submit" value="Submit">
+	</form>
+</body>
+</html>
